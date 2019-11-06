@@ -1,0 +1,31 @@
+
+const int switchPin = 2;	// the number of the pushbutton pin
+const int bellPin = 7;	// the number of the Bell pin
+
+int bellState = LOW;	// the	current state of the output pin	
+int switchState=LOW;	// the current reading from the	input pin
+int lastswitchState = LOW;		
+unsigned long lastDebounceTime = 0;	
+unsigned long debounceDelay = 10;
+if the output flickers			
+void setup() {			
+pinMode(switchPin, INPUT);			
+pinMode(bellPin, OUTPUT);		// set initial BELL state	
+digitalWrite(bellPin, bellState);		
+}			
+// declaring constants
+const int switchPin = 2;
+const int bellPin = 7;
+
+
+// declaring Variables
+int bellState = LOW;		
+int switchState=LOW;	
+int lastswitchState = LOW;		
+unsigned long lastDebounceTime = 0;	
+unsigned long debounceDelay = 10;	
+void setup() {			
+pinMode(switchPin, INPUT);			
+pinMode(bellPin, OUTPUT);		
+digitalWrite(bellPin, bellState);		
+}			
