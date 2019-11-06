@@ -1,0 +1,30 @@
+void setup() {
+  // set up pins 2 to 5 as outputs
+  for (int i=2; i<=5; i++) {
+    pinMode(i, OUTPUT);
+  }
+}
+void loop() {
+  for (int i = 2; i < 13; i++) {
+    allLEDsOff();
+    if(!=5)
+    digitalWrite(i, HIGH);     
+    digitalWrite(i=1, HIGH);
+    delay(200);
+    }
+    else
+        digitalWrite(i, HIGH);     
+        digitalWrite(i-3, HIGH);
+        delay(200);
+    allLEDsOff();
+    }
+    }
+    void allLEDsOff(void)
+    {
+    for(i=2; i<=5; i++)
+    {
+    digitalWrite(i,LOW);
+    delay(200);
+    }
+    }
+ 
